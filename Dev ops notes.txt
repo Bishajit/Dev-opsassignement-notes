@@ -1,0 +1,203 @@
+Intro to computer hardaware
+-Ports-connetion points that we can connect devices to that extend the funtionality of our computer.
+
+Cpu- The brain of our computer it does all the calculations and data processing
+
+Ram- Computer short term memory
+
+Hardrive- Holds all our data
+
+Motherboard The body or circuitboard of the computer that connects all the parts of the computer
+
+Power supply- Conducts electricity to all parts of the computer
+
+Programs and Harware
+
+-Only communicates in binary
+-Programs-instructions that tell the computer what to do.
+-Chef(CPU)- puts reciepies in the ram (short term ram).
+-External data bus- Uses 1,0. Row of wires that connects to the computer.
+-Memory controller chip-The bridge or chip talks to the brain(cpu) and the ram.Grabs data from and sends it to cpu. 
+-Address bus- Process that connects cpu to the mommory controller chip (MCC).
+Cache- L1,L2, L3
+CLockwire- Send and recieves data so it can do calculation. For every tick it does one cycle of operations. CLock cycyl
+Clock speed- maxximum amount of clock cycles it can handle in a time period. 
+Overclocking- 
+
+CPU
+
+-Instruction set- list of instructions
+-Hard coded into cpu
+-Makes sure cpu comptible with motherboard
+-Heat sink- cools the cpu.
+
+Ram
+-Short term memory to access data quickly
+_Volatile
+-D-ram ; type of ram. 
+-SDram
+-DDR- 1,2,3,4
+-Needs compatible motherboard
+
+Motherboards 
+-Foundation that keeps the computer to kept together. 
+-Chipset- decides how components talk to eachother.
+-Noerthbridge-Inter connects ram and video cards. 
+-Southbridge- which maintain io or input and out puts data.
+-Peripherals- External devices we connect to our computer, like a mouse, keyboard, and monitor
+-Expandion slots- Give us the ability to increase the functionality of our computer
+-Peripheral component interconnect express
+-Form factor- determines the amount of space in the mother board. most common form factor (ATX). Other one (ITX)
+
+Storage
+-Data sizes
+-8 bits=1 byte
+-1 kilobyte- consist of 1024 bytes
+-SSD better than HDD
+-ATA
+
+Components of an operating system
+- Operating system- THe whole package that manages our computer resources and lets us interact with it.
+-Kernal space-File storage and file management
+     -File system- organizes files and how it is managed. and not puting into one file and put into directories
+     - Process management-  The order they run, how many resources they take up, how long they run. Does this with process management capabilities.
+     -Memory management- Our Kernel optimizes memory usage and makes sure our application have enough memory to run
+     -input/output management-Anything that can give us input or that we can use for output of data.
+
+-USer space
+     -Everything outside the Kernel (music player, System settings)
+
+Operating system- Files and file systems
+   *File Handling
+      -Data
+        -Meta data
+          -File system- Used for different purposes and speeds. Windows (NTFS) future one(REFS)  Mac os (HFS+) linus (ext4)
+
+        -File data- We write to our hard drive in the form of data blocks
+	-Block Storage- Improves faster handling of data because the data isnt stored as one long piece and can be accessed quicker.
+  -Metadata
+	-File extention-The appended part of a filename that tells us what type of file it is in certain operating systems.
+
+Operating system process management   
+
+	-What's an operating system (Process Management) 
+	-Process -A program that's executing, like our internet browser or text editor.
+	-Program- An aplication we can run like chrome.
+	-Sytem runing multiple processes. 
+ 	-uses ram and cpu
+	-cpu run process through time slice
+	- A very short interval of time that gets allocated to a process for cpur exececution. 
+	-Kernel-Creates processes, effeciently schedules them and manages how processes are terminated. 
+
+Operating system-Memory Managament
+
+	-Virtual memory- The combination of hard drive space and Ram that acts like memory that our processes can use.
+	-Swap space- When we allocate space into our hard drive. We call that swap space
+
+Operating system- IO management
+-I/O devices that perform input and output (keyboard, headset..etc). Managed by kernel
+
+Interacting with the OS User space
+-shell- A program that interprets text commands and sends them to the OS to execute. EX (Bash, Bourn again Shell)
+-Graphical user interface (GUI)
+
+Operating system - Logs
+-Logs- Files that record systems events on our computer, just like a system's diary
+
+Operating System- The Boot Process
+-Booting- 
+-Power on
+_BIOS?UEFI- A low level software that initializes our computer's hardware to makesure everything is good to go.
+-Post (Power on Self Test)- Performs test to see if the comp is working properly, 
+-Bootloader- Small program that loads the operating system.
+-OS
+-Kernel
+-System processes
+-User Space
+
+ 
+Networking- Basics of Networking
+Network-Computers can talk to eachother through being connected. 
+-World Wide Web
+-The internet- The physical connection of computer and wires around the world.
+-The Web- The imformation on the internet.
+	ex Email, chat
+-Networking
+	-Servers
+	-Clients
+	-Isp (Internet service providers)- forms networks
+ip- identify address of a computer.
+Mac address- hardcoded into devide. When you send or recieve data through a network you need to have both an IP and a MAC address.
+-Packets-
+
+Network Harware
+-Ethernet cable
+-WIFI
+-FIber optic
+-Router- Connects lots of different devices together and helps route network traffic
+-Switches
+-hubs
+-Network Stack- A set of harware or software that provides the infrastructure for a computer
+
+Networking- Language of the internet
+-Roughted effeciently 
+-Aren't corrupted
+-Secure
+-Right machine
+-Named apropriately
+
+-TCP/IP
+IP-Delivers packets to right computer
+TCP-Delivers imformation from one network to another
+
+Networking- The Web
+- HTML (Hyper text Markup language
+-URL (Uniform resource loacator)
+-ICANN- Intenet Corporation for Assigned Names and Numbers
+-DNS- DOmain Name System
+
+Networking- What is the CLoud
+-Cloud Computing_ A technological approach where computing resources are provisioned in a sharable way, so that lots of users get what they need, when they need it . 
+-Hardware virtualization- A single physical machine called a host could run many individual virtual instances called guests.
+_Hypervisor-A piece of software that runds and manages virtual machines, while also offering these guests a virtual operating platform that's indistinguishable from actual hardware.
+-Public cloud- A large cluster of machine run by another company
+-Private cloud-used by single large corparation and genrally physically hosted on its own premises.
+-Hybrid cloud A term used to describe situations where companies might run things like their most sensitive propriety technologies on a private cloud, while entrusting their less-sensitive servers to a public cloud. 
+
+-Cloud-computing- new model in computing where large clusters of machines let us use the total resources avalible in a better way. 
+
+
+What is cloud computing
+	The five characteristics of Cloud Computing 
+-On-denand-self service:
+	- Users can provision resources and use them with out human interaction from the service provider 
+-Broad network access
+	- Resources avalible over the network and can be aaccessesd by diverse client platforms
+-Multi-tenancy and resource pooling
+	-Multiple customers can share the same inferastructure and application with  security and privact
+	-Multiple customers are service from the physical resources
+-Rapid elasticity and scalability 
+	-Automatically and quickly aquire and disposes resources when needed
+	-Quickly and easily scale based on demand.
+-Measured service
+	-Usage is measured, users pay correctly for what they have used. 
+
+	Six advantages of cloud computing 
+-Trade capital expense (CAPEX) for operational expense (OPEX)
+-Benefit from massice economies of scale
+-Stop guessing capacity
+-Increase speed and agility
+-Stop spending money running and maintaining data centers
+-Go global in munute: leverage the AWS global infrastructure. 
+
+		Problems solved by the cloud
+-Flexibility: 
+-Cost effectiveness
+-Scalabiltiy
+-Elasticity
+-High-availiability and fault tolerance
+-Agility
+
+
+
+
