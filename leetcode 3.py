@@ -12,3 +12,4 @@ class Solution(object):
             return False
 
 print(Solution.arrayStringsAreEqual('',['ab','c'],['a','bc']))
+#https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
