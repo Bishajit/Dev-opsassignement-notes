@@ -11,3 +11,4 @@ class Solution:
                 steps += 1
 
         return(steps)
+#https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/submissions/
