@@ -12,6 +12,7 @@ class Solution:
         return count
 
 print(Solution.numJewelsInStones(input (f"enter jewels " ),input("enter stones")))
+#https://leetcode.com/problems/jewels-and-stones/
 
 
 
