@@ -141,7 +141,7 @@ Intelligent Tiering, S3 Glacier and S3 Glacier Deep Archive
 
 Storage Pricing- EBS
 • Volume type (based on performance) 
-• Storage volume in GB per month (provisionned )
+• Storage volume in GB per month (provisionned)
 • IOPS: 
 	• General Purpose SSD: Included 
 	• Provisioned IOPS SSD:  Provisionned amount in IOPS 
@@ -243,7 +243,6 @@ Billing and Costing Tools
 	• Billing Alarms 
 	• Budgets
 
-part 219
 AWS Total Cost of Ownership (TCO) Calculators
 • AWS helps you reduce Total Cost of Ownership (TCO) by (reducing the
 need to invest in large capital expenditures) and providing a (pay-as-yougo) model
@@ -254,7 +253,7 @@ executive presentations.
 hosting environment to (AWS): Server, Storage, Network, IT Labor
 • https://awstcocalculator.com/
 
-
+214 
 
 Account Best Practices – Summary
 
@@ -271,6 +270,92 @@ Account Best Practices – Summary
 • If your Account is compromised: change the root password, delete and rotate all passwords / keys, contact
 the AWS support
 
+Simple Monthly Calculator / Pricing Calculator
+• Note: deprecated service (June 30th 2020)
+• Replaced by (AWS Pricing Calculator) https://calculator.aws/
+• Estimate the cost for your architecture solution.
+
+215- tracking cost in the cloud
+
+Cost Allocation Tags
+• Use (cost allocation tags) to track your AWS costs on a detailed level
+• (AWS generated tags)
+	• Automatically applied to the resource you create
+	• Starts with Prefix aws: (e.g. aws: createdBy)
+• (User-defined tags)
+	• Defined by the user
+	• Starts with Prefix (user:) 
+
+Tagging and Resource Groups
+• (Tags) are used for organizing resources:
+	• EC2: instances, images, load balancers, security groups…
+	• RDS, VPC resources, Route 53, IAM users, etc…
+	• Resources created by CloudFormation are all tagged the same way
+• Free naming, common tags are: Name, Environment, Team …
+• Tags can be used to create (Resource Groups)
+	• Create, maintain, and view a collection of resources that share common tags
+	• Manage these tags using the Tag Editor
+
+Cost and Usage Reports
+• Dive deeper into your AWS costs and usage
+• The AWS Cost & Usage Report contains (the most comprehensive set of AWS cost and usage data available), including additional metadata
+about AWS services, pricing, and reservations (e.g., Amazon EC2 Reserved Instances (RIs)).
+• The AWS Cost & Usage Report lists AWS usage for each service
+category used by an account and its IAM users in hourly or daily line
+items, as well as any tags that you have activated for cost allocation
+purposes.
+• Can be integrated with Athena, Redshift or QuickSight
+
+Simple Monthly Calculator / Pricing Calculator
+• Note: deprecated service (June 30th 2020)
+• Replaced by (AWS Pricing Calculator) https://calculator.aws/
+• Estimate the cost for your architecture solution.
+
+Cost Explorer
+• Visualize, understand, and manage your AWS costs and usage over time
+• Create custom reports that analyze cost and usage data.
+• Analyze your data at a high level: total costs and usage across all accounts
+• Or Monthly, hourly, resource level granularity
+• Choose an optimal Savings Plan (to lower prices on your bill)
+• Forecast usage up to 12 months based on previous usage
+
+Billing and Costing Tools
+•(Estimating cost in the cloud):
+	•TCO calculator
+	•Simple Monthly Calculator/ Pricing calculator
+•(Tracking costs in the cloud):
+	•Billing Dashboard
+	•Cost Allocation Tags
+	•Cost and Usage Reports
+	•Cost Explorer
+216
+
+Billing Alarms in CloudWatch 
+
+• (Billing data metric is stored
+in CloudWatch us-east1)
+• Billing data are for overall
+worldwide AWS costs
+• It’s for actual cost, not for
+projected costs
+• Intended a simple alarm
+(not as powerful as AWS
+Budgets)
+
+AWS Budgets
+
+• Create budget and (send alarms when costs exceeds the budget)
+• 3 types of budgets: Usage, Cost, Reservation
+• For Reserved Instances (RI)
+	• Track utilization
+	• Supports EC2, ElastiCache, RDS, Redshift
+• Up to 5 SNS notifications per budget
+• Can filter by: Service, Linked Account, Tag, Purchase Option, Instance
+Type, Region, Availability Zone, API Operation, etc…
+• Same options as AWS Cost Explorer!
+• 2 budgets are free, then $0.02/day/budget
+
+
 part 220
 Billing and Costing Tools – Summary 
 • Compute Optimizer: recommends resources’ configurations to reduce cost
@@ -283,4 +368,5 @@ Billing and Costing Tools – Summary
 • Billing Alarms: in us-east-1 – track overall and per-service billing
 • Budgets: more advanced – track usage, costs, RI, and get alerts
 • Savings Plans: easy way to save based on long-term usage of AWS
+
 
