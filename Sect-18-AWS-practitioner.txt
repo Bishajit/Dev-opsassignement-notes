@@ -355,6 +355,94 @@ Type, Region, Availability Zone, API Operation, etc…
 • Same options as AWS Cost Explorer!
 • 2 budgets are free, then $0.02/day/budget
 
+217 Trusted advisor 
+
+Trusted Advisor
+• No need to install anything – high level AWS account assessment
+• Analyze your AWS accounts and provides recommendation:
+• Core Checks and recommendations – all customers
+• Can enable weekly email notification from the console
+• Full Trusted Advisor – Available for (Business & Enterprise support) plans
+	• Ability to set CloudWatch alarms when reaching limits
+	• Programmatic Access using AWS Support API
+
+Trusted Advisor Checks Examples 
+• Cost Optimization: 
+	• low utilization EC2 instances, idle load balancers, under-utilized EBS volumes… 
+	• Reserved instances & savings plans optimizations, 
+• Performance: 
+	• High utilization EC2 instances, CloudFront CDN optimizations 
+	• EC2 to EBS throughput optimizations, Alias records recommendations •
+ Security: 
+	• MFA enabled on Root Account, IAM key rotation, exposed Access Keys 
+	• S3 Bucket Permissions for public access, security groups with unrestricted ports
+• Fault Tolerance: 
+	• EBS snapshots age, Availability Zone Balance • ASG Multi-AZ, RDS Multi-AZ, ELB configuration… 
+	• Service Limits
+
+218
+
+AWS Basic Support Plan
+• (Customer Service & Communities) - 24x7 access to customer service,
+documentation, whitepapers, and support forums.
+• (AWS Trusted Advisor) - Access to the 7 core Trusted Advisor checks and
+guidance to provision your resources following best practices to
+increase performance and improve security.
+• (AWS Personal Health Dashboard) - A personalized view of the health of
+AWS services, and alerts when your resources are impacted.
+
+AWS Developer Support Plan
+• All Basic Support Plan + 
+
+• (Business hours email access to Cloud Support Associates) 
+• Unlimited cases / 1 primary contact 
+
+• Case severity / response times: 
+	• General guidance: < 24 business hours 
+	• System impaired: < 12 business hours
+
+AWS Business Support Plan (24/7) 
+• Intended to be used if you have (production workloads) 
+• (Trusted Advisor )– Full set of checks + API access 
+• (24x7 phone, email, and chat) access to Cloud Support Engineers 
+• Unlimited cases / unlimited contacts 
+• Access to Infrastructure Event Management (for additional fee). 
+Case severity / response times: 
+	• General guidance: < 24 business hours
+	• System impaired: < 12 business hours 
+	• (Production system impaired: < 4 hours) 
+	• (Production system down: < 1 hour)
+
+AWS Enterprise Support Plan (24/7)
+• Intended to be used if you have mission critical workloads
+• All of Business Support Plan +
+• Access to a (Technical Account Manager) (TAM)
+• (Concierge Support Team) (for billing and account best practices)
+• Infrastructure Event Management, Well-Architected & Operations Reviews
+• Case severity / response times:
+	• …
+	• Production system impaired: < 4 hours
+	• Production system down: < 1 hour
+	• *Business-critical system down: < 15 minutes*
+
+219
+
+Account Best Practices – Summary
+• Operate multiple accounts using Organizations
+• Use (SCP) (service control policies) to restrict account power
+• Easily setup multiple accounts with best-practices with ("AWS Control Tower") which is on top of or
+• (Use Tags & Cost Allocation Tags) for easy management & billing
+• (IAM guidelines:) MFA, least-privilege, password policy, password rotation
+• (Config) to record all resources configurations & compliance over time
+• (CloudFormation) to deploy stacks across accounts and regions
+• (Trusted Advisor) to get insights, Support Plan adapted to your needs
+• Send Service Logs and Access Logs to (S3 or CloudWatch Logs)
+• (CloudTrail) to record API calls made within your account
+• If (your Account is compromised:) change the root password, delete and rotate all passwords / keys, contact
+the AWS support
+
+
+
 
 part 220
 Billing and Costing Tools – Summary 
